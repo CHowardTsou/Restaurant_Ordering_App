@@ -1,0 +1,48 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="app">
+            <header>
+                <div class="header-inner">
+                    <h1>Jimmy's Diner</h1>
+                    <p>The best burgers and pizzas in town</p>
+                </div>
+            </header>
+        
+            <main>
+                <div class="menu" id="menu-modal">
+                    <!-- menu render here -->
+                </div>
+                
+                <div class="order" id="order">
+                    <h2>Your Order</h2>
+                    <div id="render-list">
+                    <!-- order render here -->
+                
+                    </div>
+                    <div class="render-total" id="render-total">
+                        <!-- render total price -->
+                    </div>
+                    <button class="btn-complete" id="btn-complete">Complete Order</button>
+                </div>    
+                
+                
+            </main>
+            
+            <form class="checkout-payment-modal hidden" id="checkout-payment-modal">
+                <h2>Enter card details</h2>
+                <input type="text" placeholder="Enter your name" id="customerName" required>
+                <input type="number" placeholder="Enter your card number" required>
+                <input type="number" placeholder="Enter CVV" required>
+                <button type="submit" id="btn-pay">Pay</button>
+            </form>
+        </div>
+	        <script src="index.js" type="module"></script>
+    </body>
+</html>
+
